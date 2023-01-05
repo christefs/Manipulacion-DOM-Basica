@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación del DOM básica - Curso práctico de Javascript</title>
+</head>
+<body>
+    <!--<h1 pantalla="platzilg">Manipulación del DOM básica</h1>-->
+    <h1 class="verde">Manipulación del DOM básica</h1>
+
+    <p>Esto es un párrafo</p>
+    <p class="parrafito">Esto es un párrafo con clase</p>
+    <p id="pid">Esto es un párrafo con ID</p>
+
+    <form id="form">
+        <input id="calculo1" placeholder="Escribe algo aquí" />
+        <input onchange="console.log('Cambió el input')" id="calculo2" placeholder="Escribe algo aquí" />
+    <!--   <button id="btnCalcular" onclick="btnOnClick()">Calcular</button> -->
+    <!--    <button id="btnCalcular">Calcular</button> <!--Requiere función addEventListener y parámetro submit. Dentro de la función en JS requiere el parámetro event.preventDefault()-->
+        <button type="button" id="btnCalcular">Calcular</button> <!--Requiere función addEventListener y parámetro click-->
+        
+        <p id="result"></p>
+        <p id="result2"></p>
+    </form>
+    
+    <!--<script src="./script.js"></script> -->
+    <script src="./script2.js"></script>
+    
+</body>
+</html>
